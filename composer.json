@@ -1,0 +1,17 @@
+{
+    "name": "automattic/jetpack-gif-block-plugin",
+    "description": "Giphy Block by Jetpack",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "require": {
+        "automattic/jetpack-gif-block": "@dev",
+        "automattic/jetpack-autoloader": "@dev"
+    },
+    "repositories": [
+		{
+			"type": "path",
+			"url": "../jetpack/packages/*"
+		}
+	]
+}

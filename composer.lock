@@ -1,0 +1,122 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "c1358b94bc0fdca7edea4f6a7223e475",
+    "packages": [
+        {
+            "name": "automattic/jetpack-autoloader",
+            "version": "dev-try/package-button-block",
+            "dist": {
+                "type": "path",
+                "url": "../jetpack/packages/autoloader",
+                "reference": "b07539c28f5df34b69dc8a54e8b4536853453bcb"
+            },
+            "require": {
+                "composer-plugin-api": "^1.1 || ^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Automattic\\Jetpack\\Autoloader\\CustomAutoloaderPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Automattic\\Jetpack\\Autoloader\\": "src"
+                }
+            },
+            "scripts": {
+                "phpunit": [
+                    "@composer install",
+                    "./vendor/phpunit/phpunit/phpunit --colors=always"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Creates a custom autoloader for a plugin or theme."
+        },
+        {
+            "name": "automattic/jetpack-block-loader",
+            "version": "dev-try/package-button-block",
+            "dist": {
+                "type": "path",
+                "url": "../jetpack/packages/block-loader",
+                "reference": "9da74032f743e8abd19b0b001d410962277dd338"
+            },
+            "require-dev": {
+                "php-mock/php-mock": "^2.1",
+                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5",
+                "roots/wordpress": "^5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "legacy",
+                    "src/"
+                ]
+            },
+            "scripts": {
+                "phpunit": [
+                    "@composer install",
+                    "./vendor/phpunit/phpunit/phpunit --colors=always"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "A nice button"
+        },
+        {
+            "name": "automattic/jetpack-gif-block",
+            "version": "dev-try/package-button-block",
+            "dist": {
+                "type": "path",
+                "url": "../jetpack/packages/gif-block",
+                "reference": "43cd3182ba7be13deaf4ce6b676cf119a8b8c134"
+            },
+            "require": {
+                "automattic/jetpack-block-loader": "@dev"
+            },
+            "require-dev": {
+                "php-mock/php-mock": "^2.1",
+                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "actions.php"
+                ],
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "scripts": {
+                "phpunit": [
+                    "@composer install",
+                    "./vendor/phpunit/phpunit/phpunit --colors=always"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Show a gif"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "automattic/jetpack-gif-block": 20,
+        "automattic/jetpack-autoloader": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}
