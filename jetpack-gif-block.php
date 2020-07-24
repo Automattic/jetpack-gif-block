@@ -20,5 +20,5 @@ require __DIR__ . '/vendor/autoload_packages.php';
 add_action( 'plugins_loaded', array( 'Jetpack_Gutenberg', 'init' ) );
 
 add_action( 'init', function() {
-	error_log("sample gif block initialized");
+	// error_log("sample gif block initialized");
 } );

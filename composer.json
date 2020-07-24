@@ -5,8 +5,8 @@
     "license": "GPL-2.0-or-later",
     "minimum-stability": "dev",
     "require": {
-        "automattic/jetpack-gif-block": "@dev",
-        "automattic/jetpack-autoloader": "@dev"
+        "automattic/jetpack-gif-block": "dev-try/package-button-block",
+        "automattic/jetpack-autoloader": "dev-try/package-button-block"
     },
     "repositories": [
 		{

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1358b94bc0fdca7edea4f6a7223e475",
+    "content-hash": "ec19e67bc1f596209f6a7589ae5e07be",
     "packages": [
         {
             "name": "automattic/jetpack-autoloader",
@@ -46,7 +46,10 @@
             "dist": {
                 "type": "path",
                 "url": "../jetpack/packages/block-loader",
-                "reference": "9da74032f743e8abd19b0b001d410962277dd338"
+                "reference": "5dfb8a28374d8e8c34143ae7d3e01986e83d2aeb"
+            },
+            "require": {
+                "automattic/jetpack-status": "^1.2"
             },
             "require-dev": {
                 "php-mock/php-mock": "^2.1",
@@ -105,6 +108,38 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Show a gif"
+        },
+        {
+            "name": "automattic/jetpack-status",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Automattic/jetpack-status.git",
+                "reference": "c0baae6da59a8f86dfdcd28577bd959691492a96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Automattic/jetpack-status/zipball/c0baae6da59a8f86dfdcd28577bd959691492a96",
+                "reference": "c0baae6da59a8f86dfdcd28577bd959691492a96",
+                "shasum": ""
+            },
+            "require-dev": {
+                "brain/monkey": "2.4.0",
+                "php-mock/php-mock": "^2.1",
+                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Used to retrieve information about the current status of Jetpack and the site overall.",
+            "time": "2020-06-22T11:38:04+00:00"
         }
     ],
     "packages-dev": [],
